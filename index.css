@@ -1,0 +1,20 @@
+#steppp {
+    position: relative;
+  }
+  
+  .step {
+    display: none;
+  }
+  
+  [data-steppp-active] {
+    display: block;
+  }
+  
+  [data-steppp-wrapper] {
+    position: relative;
+    overflow: hidden;
+  }
+
+  #title {
+    color: red
+  }

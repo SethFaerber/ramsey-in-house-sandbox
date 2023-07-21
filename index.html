@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./index.css">
+        <script src="https://unpkg.com/@ramseyinhouse/steppp"></script>
+    </head>
+    <body>
+        <div id="title">Trying Things Out</div>
+        <div id="targetElement">
+            <div id="steppp">
+                <section class="step" data-steppp-active>first</section>
+                <section class="step">second</section>
+                <section class="step">third</section>
+            </div>
+        </div>
+        <div>
+            <button id="forward">Forward</button>
+            <button id="backward">Backward</button>
+        </div>
+
+        <p id="feeling">Happy</p>
+        <button id="changeFeeling" onclick="changeFeeling()" type="button">Change Feeling</button>
+        
+        <script type="module">
+            import Steppp from "https://unpkg.com/@ramseyinhouse/steppp@1.0.2/dist/steppp.es.js";
+            
+            console.log(Steppp);
+            
+            const element = document.getElementById("steppp");
+            
+            Steppp(element);
+        </script>
+        <script src="./index.js"></script>
+    </body>
+</html>
